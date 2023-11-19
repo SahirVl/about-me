@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #3498db;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar img {
+
+  margin-left: 24px;
+  height: 210px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.sidebar p {
+  margin-top: 10px;
+}
+
+.main-content span:hover {
+  color: #3498db
+}
+
+.main-content {
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.info-container {
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Bordes para separar los contenedores */
+  padding: 10px;
+}
+
+.container-header {
+  background-color: #3498db; /* Color azul para el fondo del encabezado */
+  color: #fff; /* Texto en color blanco para contraste */
+  padding: 8px;
+  margin-bottom: 10px; /* Espacio entre el encabezado y el contenido */
+}
+
+.container-header span {
+  color: red;
+}
+
