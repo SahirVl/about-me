@@ -1,11 +1,10 @@
 body {
   font-family: sans-serif, Arial;
-
 }
 
 .container-main {
-margin: 20px;
-
+  margin: 20px;
+  display: flex; /* Utilizamos flexbox para el diseño */
 }
 
 .sidebar {
@@ -13,76 +12,70 @@ margin: 20px;
   width: 20%;
   background-color: #3498db;
   border-radius: 7px;
-  float: left;
 }
 
 .sidebar-img {
-  width: 100%; /* Ancho del contenedor del logo */
+  width: 100%;
   height: 200px;
   border-radius: 50%;
-  background-position: center; /* Centrar la imagen */
-  background-size: contain; /* Ajustar tamaño de la imagen */
-  background-repeat: no-repeat; /* Evitar que la imagen se repita */
-  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .sidebar p {
   margin-top: 10px;
-  justify-content: center;
   text-align: justify;
 }
 
-.main-content span:hover {
-  color: #3498db
+.main-content {
+  flex: 1; /* El contenido principal ocupa el resto del espacio disponible */
+  padding: 10px;
 }
 
-
+.main-content span:hover {
+  color: #3498db;
+}
 
 .info-container {
   margin-bottom: 20px;
-  border: 1px solid #ddd; /* Bordes para separar los contenedores */
+  border: 1px solid #ddd;
   padding: 10px;
 }
 
 .container-header {
-  background-color: #3498db; /* Color azul para el fondo del encabezado */
-  color: #fff; /* Texto en color blanco para contraste */
+  background-color: #3498db;
+  color: #fff;
   padding: 8px;
-  margin-bottom: 10px; /* Espacio entre el encabezado y el contenido */
+  margin-bottom: 10px;
 }
 
 .container-header span {
   color: red;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
+  .container-main {
+    flex-direction: column; /* En dispositivos móviles, cambiamos a una disposición en columna */
+  }
+
   .sidebar {
-      width: 100%; /* Cambiar el ancho del sidebar al 100% */
-      float: none; /* Eliminar la propiedad float */
+    width: 100%;
+    margin-bottom: 10px; /* Agregamos un margen inferior para separar del contenido principal */
+  }
+
+  .main-content {
+    margin-left: 0;
   }
 }
 
-.main-content {
-  margin-left: 25%;
-  padding: 10px;
-}
-
-.info-container {
-  margin-bottom: 10px;
-  padding: 8px;
-}
-
 img {
-max-width: 100%;
-height: 200px;
+  max-width: 100%;
+  height: auto; /* Ajustamos la altura automáticamente para mantener la proporción */
 }
 
 a {
-display: block;
-padding: 10px;
-text-align: left;
-} 
-
+  display: block;
+  padding: 10px;
+  text-align: left;
+}
