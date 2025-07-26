@@ -2,102 +2,84 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>About me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de Sahir</title>
 
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+  <!-- Encabezado -->
+  <div class="top-banner">
+    <h2 class="m-0">🚀 Desarrollador Web en crecimiento | MERN Stack en progreso</h2>
+  </div>
 
-    <div class="sidebar">
+  <!-- Contenido principal -->
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <div class="sidebar-box">
+          <img src="images/my_picture.jpeg" alt="Mi foto" class="sidebar-img">
+          <h2>Acerca de mí</h2>
+          <p>Soy estudiante SENA en formacion, con conocimientos en Node.js, Express, MongoDB, MySQL y estoy aprendiendo react, tengo habilidades con Git, comunicación efectiva y trabajo en equipo. Actualmente perfecciono mi nivel de inglés.</p>
+        </div>
+      </div>
 
-        <img src="images/my_picture.jpeg" alt="My picture">
-
-        <!-- Información -->
-        <h2>Acerca de mí</h2>
-        <p>Soy desarrollador Web con conocimientos básicos de Node.js,
-            he hecho proyectos de estudio utilizando bases de datos como MongoDB y MySQL, 
-            Implementé ORM para optimizar el acceso a la base de datos y mejorar la eficiencia del código, 
-            actualmente quiero completar el stack MERN y es por eso que me encuentro realizando el curso de
-            React,
-            con lo anterior aprendi a crear backend de APIs básicas. 
-            Tengo habilidad para trabajar con controladores de versiones Git,
-            tengo actitudes para trabajar en equipo, buena comunicacion, capacidad resolutiva y responsabilidad. 
-            Actualmente me encuentro mejorando mi nivel de inglés, el cual es básico, sin embargo cuento con la capacidad
-            de comunicarme en este idioma.
-        </p>
-
-    </div>
-
-
-    <div class="main-content">
-
+      <!-- Main -->
+      <div class="col-md-8">
         <h1>Bienvenido, mi nombre es <span>SAHIR VELASCO</span></h1>
         <p>Así empecé este camino.</p>
-        <!-- Primer contenedor -->
+
+        <!-- Secciones -->
         <div class="info-container">
-            <div class="container-header"> Principios del año 2022</div>
-            <p>Inicie a estudiar programación de software con la Universidad Industrial de Santander en unos
-                diplomados que ofreció el programa MisionTic2022 del Ministerio de las TIC (Colombia)
-                en el cual me enseñaron fundamentos de varios lenguajes de programación como python, java, javascript,
-                al principio no entendía mucho y era frustrante, pero de cierta manera siempre me ha gustado la
-                tecnología
-                Y no era momento para negarme a aprender algo que tanto me gusta.
-            </p>
-            <img src="images/Mintic_certi2022.png" alt="Mintic" width="300" height="200">
+          <div class="container-header">📅 Principios del año 2022</div>
+          <p>Empecé a estudiar software con la Universidad Industrial de Santander a través del programa MisionTic2022. Aprendí fundamentos de Python, Java y JavaScript.</p>
+          <img src="images/Mintic_certi2022.png" class="img-fluid" alt="Mintic">
         </div>
 
-        <!-- Segundo contenedor -->
         <div class="info-container">
-            <div class="container-header">Finales de 2022 e inicios del 2023</div>
-            <p>En esta época ya tenía un conocimiento básico, pero este me permitió con algo más de entendimiento sobre
-                el tema querer desarrollar aun más mis habilidades, por ello empecé a estudiar en la plataforma de
-                Platzi, la cual me ha servido mucho, ya que sus cursos iban enfocados a lo que yo quería lograr para ser
-                full stack web developer, con ayuda de sus cursos cree el backend de mis primeras APIs.
-            </p>
-            <p>⇊ Aquí te dejo 2 repositorios públicos de gitlab con 2 APIs hechas con lo que he aprendido. ⇊</p>
-            <a href="https://gitlab.com/sahirvl/gestor-de-videos" target="_blank"> Gestor de Videos </a>
-            <br></br>
-            <a href="https://gitlab.com/sahirvl/my-post-office" target="_blank"> Mi oficina de correos </a>
+          <div class="container-header">🚀 Finales de 2022 e inicios del 2023</div>
+          <p>Me formé en Platzi para desarrollar mis habilidades como full stack developer y creé mis primeras APIs.</p>
+          <p>🔗 <a href="https://gitlab.com/sahirvl/gestor-de-videos" target="_blank">Gestor de Videos</a></p>
+          <p>🔗 <a href="https://gitlab.com/sahirvl/my-post-office" target="_blank">Mi oficina de correos</a></p>
         </div>
 
-        <!-- Tercer contenedor -->
         <div class="info-container">
-            <div class="container-header">Actualmente</div>
-            <p>En la actualidad, me encuentro mejorando mis habilidades con el ingles y estoy enfocado en aprender React
-                para poder crear paginas web que se vean agradables a la vista y 100% funcionales.
-            </p>
-            <img src="images/certi_uda.png" alt="Udea" width="400" height="300">
-            <img src="images/curso_react.png" alt="React" width="250" height="150">
-            <img src="images/curso_eng.png" alt="English" width="200" height="100">
+          <div class="container-header">🌱 En 2023</div>
+          <p>Me enfoco en mejorar mi inglés y aprender React para crear interfaces agradables y funcionales.</p>
+          <div class="row">
+            <div class="col-4"><img src="images/certi_uda.png" class="img-fluid mb-2" alt="Udea"></div>
+            <div class="col-4"><img src="images/curso_react.png" class="img-fluid mb-2" alt="React"></div>
+            <div class="col-4"><img src="images/curso_eng.png" class="img-fluid mb-2" alt="English"></div>
+          </div>
         </div>
-        
-        <!-- Cuarto contenedor -->
+
         <div class="info-container">
-            <div class="container-header">Que aprendi hoy ?</div>
-            <p>Realizando el curso de React.js en Platzi he logrado crear el boseto de una pagina estatica,
-                aun debo mejorarla para crear interactividad, aprender de las props y states y un mundo de cosas
-                que facilita esta biblioteca.
-            </p>
-            <img src="images/page_react_29_11.png" alt="my_first_page" width="600" height="500">
-            <p>⇊ Hecha un vistazo al codigo, lo mejorare y organizare aun mejor sus carpetas ⇊</p>
-            <a href="https://gitlab.com/sahirvl/my-post-office/-/tree/main/frontend?ref_type=heads" 
-            target="_blank"> Pagina hecha con React.js </a>
-            
+          <div class="container-header">📘 ¿Qué aprendí hoy?</div>
+          <p>Logré crear el bosquejo de una página estática en React.js. Aún estoy trabajando en interactividad y manejo de props y states.</p>
+          <img src="images/page_react_29_11.png" class="img-fluid mb-2" alt="Mi primera página">
+          <p>🔗 <a href="https://gitlab.com/sahirvl/my-post-office/-/tree/main/frontend?ref_type=heads" target="_blank">Ver código en GitLab</a></p>
         </div>
-        <!-- Quinto contenedor -->
-        <div class="info-container">
-            <div class="container-header">Contacto</div>
-            <p>Si mi perfil te llama la atencion no dudes en contactarme, muchas gracias !
-            </p>
-            <p><b>Correo: </b>Sahirvl@icloud.com</p>
-            <p><b>LinkedIn: </b>www.linkedin.com/in/sahir-velasco-110099256</p>
-    
-        </div>
+      </div>
     </div>
+  </div>
 
+  <!-- Footer profesional -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">¿Te interesa colaborar? ¡Conversemos!</p>
+      <p class="mb-2">
+        <strong>Email:</strong> <a href="mailto:Sahirvl@icloud.com">Sahirvl@icloud.com</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sahir-velasco-110099256" target="_blank">sahir-velasco</a>
+      </p>
+      <small>2025 Sahir Velasco</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
